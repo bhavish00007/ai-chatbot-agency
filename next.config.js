@@ -1,10 +1,14 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['example.com'], // Add your image domains here
-  },
-  webpack: (config) => {
-    // Custom webpack configurations can be added here
-    return config;
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'example.com',
+      },
+    ],
   },
 };
+
+module.exports = nextConfig;
