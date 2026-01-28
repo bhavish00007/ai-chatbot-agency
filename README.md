@@ -10,32 +10,6 @@ Welcome to the AI Chatbot Agency portfolio website! This project showcases our p
 - **Comprehensive Pricing Plans**: Clear presentation of pricing tiers to suit different business needs.
 - **Testimonials**: Social proof from satisfied customers to build trust and credibility.
 
-## Getting Started
-
-To get started with this project, follow these steps:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/ai-chatbot-agency.git
-   ```
-
-2. **Navigate to the project directory**:
-   ```bash
-   cd ai-chatbot-agency
-   ```
-
-3. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-4. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
-
-5. **Open your browser** and go to `http://localhost:3000` to view the application.
-
 ## Technologies Used
 
 - **React**: A JavaScript library for building user interfaces.
