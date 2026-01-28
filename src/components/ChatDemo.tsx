@@ -10,7 +10,7 @@ const ChatDemo: React.FC = () => {
                     <div className="bg-white shadow-lg rounded-lg p-6">
                         <h3 className="text-xl font-semibold mb-4">Demo 1</h3>
                         <video width="100%" height="256" controls className="border rounded mb-4" suppressHydrationWarning>
-                            <source src="/videos/demo1.mp4" type="video/mp4" />
+                            <source src="/vid1.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-full" suppressHydrationWarning>Try Demo</button>
@@ -18,7 +18,7 @@ const ChatDemo: React.FC = () => {
                     <div className="bg-white shadow-lg rounded-lg p-6">
                         <h3 className="text-xl font-semibold mb-4">Demo 2</h3>
                         <video width="100%" height="256" controls className="border rounded mb-4" suppressHydrationWarning>
-                            <source src="/videos/demo1.mp4" type="video/mp4" />
+                            <source src="/vid2.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                         <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-full" suppressHydrationWarning>Try Demo</button>

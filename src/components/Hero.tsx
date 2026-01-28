@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-blue-600 text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl md:text-2xl font-bold">AI Chatbot Agency</h1>
+        <h1 className="text-xl md:text-2xl font-bold">Samvad Systems</h1>
         <button 
           className="md:hidden" 
           onClick={() => setIsOpen(!isOpen)}
