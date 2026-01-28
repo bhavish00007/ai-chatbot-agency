@@ -27,4 +27,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Contact
 
-For inquiries, please reach out to us at [contact@aichatbotagency.com](mailto:contact@aichatbotagency.com).
+For inquiries, please reach out to us at [samvadxsystems@gmail.com](mailto:samvadxsystems@gmail.com).
