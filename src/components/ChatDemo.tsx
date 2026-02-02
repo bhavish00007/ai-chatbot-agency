@@ -1,0 +1,68 @@
+"use client";
+
+import React from "react";
+
+const ChatDemo: React.FC = () => {
+  const DEMO_URL = "https://chatbot-custom-three.vercel.app/";
+
+  return (
+    <section id="chatdemo" className="py-12 md:py-20 bg-gray-100">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">Chatbot Demo</h2>
+        <p className="text-base md:text-lg mb-12">
+          Experience our AI chatbot in action. Try out the demos below!
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Demo 1 */}
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h3 className="text-xl font-semibold mb-4">Demo 1</h3>
+            <video
+              width="100%"
+              height="256"
+              controls
+              className="border rounded mb-4"
+            >
+              <source src="/vid1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <a
+              href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-full"
+            >
+              Try Demo
+            </a>
+          </div>
+
+          {/* Demo 2 */}
+          <div className="bg-white shadow-lg rounded-lg p-6">
+            <h3 className="text-xl font-semibold mb-4">Demo 2</h3>
+            <video
+              width="100%"
+              height="256"
+              controls
+              className="border rounded mb-4"
+            >
+              <source src="/vid2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <a
+              href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-full"
+            >
+              Try Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ChatDemo;
