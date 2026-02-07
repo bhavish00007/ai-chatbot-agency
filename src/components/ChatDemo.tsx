@@ -3,7 +3,8 @@
 import React from "react";
 
 const ChatDemo: React.FC = () => {
-  const DEMO_URL = "https://chatbot-custom-three.vercel.app/";
+  const DEMO1_URL = "https://chatbot-custom-three.vercel.app/";
+  const DEMO2_URL = "https://optimalcare-delta.vercel.app/";
 
   return (
     <section id="chatdemo" className="py-12 md:py-20 bg-gray-100">
@@ -28,7 +29,7 @@ const ChatDemo: React.FC = () => {
             </video>
 
             <a
-              href={DEMO_URL}
+              href={DEMO1_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-full"
@@ -51,7 +52,7 @@ const ChatDemo: React.FC = () => {
             </video>
 
             <a
-              href={DEMO_URL}
+              href={DEMO2_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-full"

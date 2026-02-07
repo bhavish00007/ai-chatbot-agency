@@ -1,10 +1,9 @@
 {
   "name": "ai-chatbot-agency",
   "version": "1.0.0",
-  "description": "A modern portfolio website for an AI chatbot agency.",
   "private": true,
   "scripts": {
-    "dev": "NEXT_DISABLE_TURBOPACK=1 next dev",
+    "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
