@@ -37,36 +37,49 @@ const Pricing = () => {
     <>
       <section
         id="pricing"
-        className="relative z-50 pointer-events-auto py-12 md:py-20 bg-gray-100"
+        className="relative z-50 pointer-events-auto py-20 bg-slate-950"
       >
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Pricing Plans
+        <div className="container mx-auto px-6 text-center">
+          <p className="text-sm uppercase tracking-[0.3em] text-indigo-200">
+            Pricing
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold text-white md:text-4xl">
+            Flexible plans for growing teams
           </h2>
-          <p className="mb-12 text-gray-600">
+          <p className="mb-12 mt-4 text-slate-200">
             Choose the plan that fits your needs.
           </p>
 
-          <div className="flex flex-col md:flex-row justify-center gap-8">
-            {pricingPlans.map((plan) => (
+          <div className="flex flex-col justify-center gap-8 md:flex-row">
+            {pricingPlans.map((plan, index) => (
               <div
                 key={plan.name}
-                className="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/3"
+                className={`relative w-full rounded-3xl border p-8 text-left shadow-2xl shadow-slate-900/60 md:w-1/3 ${
+                  index === 1
+                    ? 'border-indigo-300/60 bg-white/10'
+                    : 'border-white/10 bg-white/5'
+                }`}
               >
-                <h3 className="text-xl font-semibold mb-2">
+                {index === 1 && (
+                  <span className="absolute -top-4 left-6 rounded-full bg-indigo-600 px-3 py-1 text-xs font-semibold text-white shadow-lg shadow-indigo-600/40">
+                    Most popular
+                  </span>
+                )}
+                <h3 className="text-xl font-semibold text-white">
                   {plan.name}
                 </h3>
 
-                <p className="text-2xl font-bold mb-4">
+                <p className="mt-2 text-3xl font-semibold text-white">
                   {plan.price}
                 </p>
 
-                <ul className="mb-6 space-y-1">
+                <ul className="mt-6 space-y-2 text-sm text-slate-200">
                   {plan.features.map((feature, index) => (
                     <li
                       key={index}
-                      className="text-gray-700 text-sm"
+                      className="flex items-center gap-2"
                     >
+                      <span className="h-2 w-2 rounded-full bg-indigo-300" />
                       {feature}
                     </li>
                   ))}
@@ -81,7 +94,7 @@ const Pricing = () => {
                       qr: plan.qr,
                     })
                   }
-                  className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition cursor-pointer"
+                  className="mt-8 w-full rounded-full bg-indigo-600 px-4 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
                 >
                   Choose Plan
                 </button>
