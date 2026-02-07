@@ -7,22 +7,28 @@ const ChatDemo: React.FC = () => {
   const DEMO2_URL = "https://optimalcare-delta.vercel.app/";
 
   return (
-    <section id="chatdemo" className="py-12 md:py-20 bg-gray-100">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Chatbot Demo</h2>
-        <p className="text-base md:text-lg mb-12">
+    <section id="chatdemo" className="py-20 bg-slate-950">
+      <div className="container mx-auto px-6 text-center">
+        <p className="text-sm uppercase tracking-[0.3em] text-indigo-200">Live previews</p>
+        <h2 className="mt-3 text-3xl font-semibold text-white md:text-4xl">Chatbot demo studio</h2>
+        <p className="mt-4 text-base text-slate-200 md:text-lg">
           Experience our AI chatbot in action. Try out the demos below!
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* Demo 1 */}
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <h3 className="text-xl font-semibold mb-4">Demo 1</h3>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left shadow-2xl shadow-slate-900/60">
+            <div className="mb-4 flex items-center justify-between">
+              <h3 className="text-xl font-semibold text-white">Demo 1</h3>
+              <span className="rounded-full bg-indigo-500/30 px-3 py-1 text-xs font-semibold text-indigo-100">
+                Customer Support
+              </span>
+            </div>
             <video
               width="100%"
               height="256"
               controls
-              className="border rounded mb-4"
+              className="rounded-2xl border border-white/20 mb-4"
             >
               <source src="/vid1.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -32,20 +38,25 @@ const ChatDemo: React.FC = () => {
               href={DEMO1_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-full"
+              className="mt-4 block w-full rounded-full bg-indigo-500 px-4 py-3 text-center text-sm font-semibold text-white transition hover:-translate-y-0.5"
             >
               Try Demo
             </a>
           </div>
 
           {/* Demo 2 */}
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <h3 className="text-xl font-semibold mb-4">Demo 2</h3>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left shadow-2xl shadow-slate-900/60">
+            <div className="mb-4 flex items-center justify-between">
+              <h3 className="text-xl font-semibold text-white">Demo 2</h3>
+              <span className="rounded-full bg-indigo-500/30 px-3 py-1 text-xs font-semibold text-indigo-100">
+                Healthcare Intake
+              </span>
+            </div>
             <video
               width="100%"
               height="256"
               controls
-              className="border rounded mb-4"
+              className="rounded-2xl border border-white/20 mb-4"
             >
               <source src="/vid2.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -55,7 +66,7 @@ const ChatDemo: React.FC = () => {
               href={DEMO2_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition w-full"
+              className="mt-4 block w-full rounded-full bg-indigo-500 px-4 py-3 text-center text-sm font-semibold text-white transition hover:-translate-y-0.5"
             >
               Try Demo
             </a>

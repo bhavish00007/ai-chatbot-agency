@@ -35,19 +35,71 @@ const Hero: React.FC = () => {
     };
 
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center px-4 py-20">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">Transform Your Customer Experience</h1>
-            <p className="text-base md:text-lg mb-8 max-w-2xl">Leverage the power of AI chatbots to engage your customers 24/7.</p>
-            <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4 mb-8">
-                <a href="#contact" className="bg-white text-blue-500 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-200 transition">Get Started</a>
-                <a href="#chatdemo" className="bg-transparent border-2 border-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-500 transition">Watch Demo</a>
+        <section className="relative overflow-hidden bg-slate-950 text-white">
+            <div className="absolute inset-0">
+                <div className="absolute -top-32 left-1/3 h-72 w-72 -translate-x-1/2 rounded-full bg-indigo-500/20 blur-[120px]" />
+                <div className="absolute top-10 right-10 h-80 w-80 rounded-full bg-blue-500/10 blur-[140px]" />
             </div>
-            <div className={`mt-10 ${isClicked ? 'animate-ping' : 'animate-bounce'} cursor-pointer`} onClick={handleClick}>
-                <img 
-                  src="/chatbot-illustration.jpg" 
-                  alt="Chatbot Illustration" 
-                  className={`w-64 md:w-80 h-64 md:h-80 mx-auto drop-shadow-lg rounded-full object-cover transition-transform duration-300 ${isClicked ? 'scale-110' : 'hover:scale-105'}`}
-                />
+            <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center gap-10 px-6 py-24 text-center md:flex-row md:text-left">
+                <div className="max-w-2xl space-y-6">
+                    <span className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1 text-xs uppercase tracking-[0.3em] text-slate-100">
+                        Next-gen AI Chatbots
+                    </span>
+                    <h1 className="text-4xl font-semibold leading-tight md:text-6xl">
+                        Transform your customer experience with conversational AI.
+                    </h1>
+                    <p className="text-base text-slate-200 md:text-lg">
+                        Launch a brand-aligned chatbot in days. Automate support, qualify leads,
+                        and build trust with always-on experiences.
+                    </p>
+                    <div className="flex flex-col gap-4 sm:flex-row">
+                        <a
+                            href="#contact"
+                            className="rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:-translate-y-0.5"
+                        >
+                            Get Started
+                        </a>
+                        <a
+                            href="#chatdemo"
+                            className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
+                        >
+                            Watch Demo
+                        </a>
+                    </div>
+                    <div className="flex flex-wrap gap-6 text-sm text-slate-200">
+                        <div>
+                            <p className="text-2xl font-semibold text-white">98%</p>
+                            <p>Resolution rate</p>
+                        </div>
+                        <div>
+                            <p className="text-2xl font-semibold text-white">24/7</p>
+                            <p>Instant responses</p>
+                        </div>
+                        <div>
+                            <p className="text-2xl font-semibold text-white">3x</p>
+                            <p>Lead capture</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="relative flex flex-col items-center gap-6">
+                    <div className="rounded-[32px] border border-white/20 bg-white/10 p-6 shadow-2xl shadow-slate-900/60 backdrop-blur animate-float">
+                        <div
+                            className={`cursor-pointer ${isClicked ? 'animate-ping' : 'animate-bounce'}`}
+                            onClick={handleClick}
+                        >
+                            <img
+                                src="/chatbot-illustration.jpg"
+                                alt="Chatbot Illustration"
+                                className={`h-64 w-64 rounded-3xl object-cover transition-transform duration-300 md:h-80 md:w-80 image-blue-tone ${
+                                    isClicked ? 'scale-110' : 'hover:scale-105'
+                                }`}
+                            />
+                        </div>
+                    </div>
+                    <div className="rounded-2xl border border-white/10 bg-white/10 px-6 py-4 text-left text-sm text-slate-200">
+                        <p className="font-semibold text-white">“We cut response time by 70%.”</p>
+                    </div>
+                </div>
             </div>
         </section>
     );
