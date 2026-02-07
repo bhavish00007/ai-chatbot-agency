@@ -19,3 +19,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.image-blue-tone {
+  filter: hue-rotate(190deg) saturate(1.2);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
