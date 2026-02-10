@@ -21,10 +21,6 @@ Welcome to the AI Chatbot Agency portfolio website! This project showcases our p
 
 We welcome contributions! If you have suggestions or improvements, please fork the repository and submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## Contact
 
 For inquiries, please reach out to us at [samvadxsystems@gmail.com](mailto:samvadxsystems@gmail.com).
