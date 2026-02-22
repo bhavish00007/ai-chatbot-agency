@@ -24,3 +24,6 @@ We welcome contributions! If you have suggestions or improvements, please fork t
 ## Contact
 
 For inquiries, please reach out to us at [samvadxsystems@gmail.com](mailto:samvadxsystems@gmail.com).
+
+## Live Link :
+https://samvadxsystems.vercel.app/
